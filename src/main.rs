@@ -18,10 +18,12 @@ fn main() {
     let humidity = json["main"]["humidity"].as_f64().unwrap();
     let pressure = json["main"]["pressure"].as_f64().unwrap();
     let wind_speed = json["wind"]["speed"].as_f64().unwrap();
+    let wind_dir = json["wind"]["deg"].as_f64().unwrap();
 
     println!("Wetter in {}:", city);
-    println!("  Temperatur : {:.2}°C", temp_celsius);
-    println!("  Luftfeuchte: {}%", humidity);
-    println!("  Luftftdruck: {}hPa", pressure);
-    println!("  Wind       : {:.2}km/h", wind_speed * 3.6);
+    println!("  Temperatur  : {:.1}°C", temp_celsius);
+    println!("  Luftfeuchte : {}%", humidity);
+    println!("  Luftftdruck : {}hPa", pressure);
+    println!("  Windgeschw. : {:.1}m/s", wind_speed);
+    println!("  Windrichtung: {:.1}°", wind_dir);
 }
