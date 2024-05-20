@@ -5,7 +5,8 @@ use serde_json::{ Value, from_str };
 fn main() {
     let city: &str    = env::CITY;
     let api_key: &str = env::API_KEY;
-    let url           = format!("https://api.openweathermap.org/data/2.5/weather?q={}&APPID={}", city, api_key);
+    let url           = format!("https://api.openweathermap.org/data/2.5/weather?q={}&APPID={}", 
+                        city, api_key);
     // println!("URL: {}", url);
 
     let response      = get(url).unwrap();
