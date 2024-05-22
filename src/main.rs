@@ -7,7 +7,7 @@ fn main() {
     let api_key: &str = env::API_KEY;
     let url           = format!("https://api.openweathermap.org/data/2.5/weather?q={}&APPID={}", 
                         city, api_key);
-    // println!("URL: {}", url);
+    println!("URL: {}", url);
 
     let response      = get(url).unwrap();
     let response_text = response.text().unwrap();

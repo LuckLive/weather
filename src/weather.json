@@ -1,0 +1,43 @@
+{
+	"coord": {
+		"lon": 12,
+		"lat": 51.5
+	},
+	"weather": [
+		{
+			"id": 800,
+			"main": "Clear",
+			"description": "clear sky",
+			"icon": "01d"
+		}
+	],
+	"base": "stations",
+	"main": {
+		"temp": 296.12,
+		"feels_like": 295.73,
+		"temp_min": 295.26,
+		"temp_max": 296.92,
+		"pressure": 1008,
+		"humidity": 48
+	},
+	"visibility": 10000,
+	"wind": {
+		"speed": 3.6,
+		"deg": 30
+	},
+	"clouds": {
+		"all": 0
+	},
+	"dt": 1716223288,
+	"sys": {
+		"type": 2,
+		"id": 2009349,
+		"country": "DE",
+		"sunrise": 1716174775,
+		"sunset": 1716231867
+	},
+	"timezone": 7200,
+	"id": 2911522,
+	"name": "Halle",
+	"cod": 200
+}
